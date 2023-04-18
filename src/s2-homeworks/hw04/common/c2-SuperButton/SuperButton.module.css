@@ -8,11 +8,27 @@
 }
 
 .secondary {
-    background-color: #D1D1D1;
+    color: #0066CC;
+
+    font: inherit;
+    padding: 5px 24px;
+    border: 1px solid #0066CC;
+    border-radius: 3px;
 }
 
 .default {
-    background-color: #0059b3;
+    font: inherit;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    background-color: #0066CC;
+
+    color: white;
+    padding: 5px 24px;
+    border: 1px solid #0066CC;
+    border-radius: 3px;
 }
 
 .red {

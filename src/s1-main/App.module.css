@@ -5,9 +5,21 @@
 }
 
 .hw {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+}
 
+.hw::after {
+    content: '';
+    background-color: black;
+    height: 10px;
+    width: 100%;
 }
 
 .hwTitle {
-
+    font-size: 22px;
+    line-height: 27px;
 }

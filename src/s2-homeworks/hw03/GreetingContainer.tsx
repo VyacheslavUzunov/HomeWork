@@ -1,6 +1,7 @@
 import React, { ChangeEvent, KeyboardEvent, useState } from 'react'
 import Greeting from './Greeting'
 import { UserType } from './HW3'
+import {keyboard} from "@testing-library/user-event/dist/keyboard";
 
 type GreetingContainerPropsType = {
     users: Array<UserType> // need to fix any
@@ -23,7 +24,10 @@ export const pureOnBlur = (name: string, setError: (error:string)=> void) => { /
     }
 }
 
-export const pureOnEnter = (e: KeyboardEvent, addUser: any) => { // если нажата кнопка Enter - добавить
+export const pureOnEnter = (e: KeyboardEvent<HTMLInputElement>, addUser: ()=>void) => {
+    if(e.keyCode == 13 ) {
+        addUser()
+    }// если нажата кнопка Enter - добавить
 }
 
 // более простой и понятный для новичков
@@ -50,7 +54,7 @@ const GreetingContainer: React.FC<GreetingContainerPropsType> = ({
         pureOnBlur(name, setError)
     }
 
-    const onEnter = (e: any) => {
+    const onEnter = (e: KeyboardEvent<HTMLInputElement>) => {
         pureOnEnter(e, addUser)
     }
 
