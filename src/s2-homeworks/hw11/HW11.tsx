@@ -54,7 +54,7 @@ function HW11() {
                         />
                     </div>
                     <div className={s.wrapper}>
-                        <span id={'hw11-value-1'} className={s.number}>{value2 - value1}</span>
+                        <span id={'hw11-value-1'} className={s.number}>{value1}</span>
                         <SuperRange
                             id={'hw11-double-slider'}
                             // сделать так чтоб value1/2 изменялось // пишет студент
@@ -62,7 +62,7 @@ function HW11() {
                             value={[value1,value2]}
 
                         />
-                        <span id={'hw11-value-2'} className={s.number}>{value2}</span>
+                        <span id={'hw11-value-2'} className={s.number}>{value2- value1}</span>
                     </div>
                 </div>
             </div>
