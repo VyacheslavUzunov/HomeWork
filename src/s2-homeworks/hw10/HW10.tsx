@@ -12,6 +12,9 @@ import {Loader} from './Loader'
 * 3 - дописать функцию setLoading
 * 4 - сделать стили в соответствии с дизайном
 * */
+type LoadingStateType = {
+    isLoading:boolean
+}
 
 const HW10 = () => {
     // useSelector, useDispatch // пишет студент
