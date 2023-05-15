@@ -1,4 +1,4 @@
-import {themeType} from "../HW12";
+
 
 const initState = {
     themeId: 1,

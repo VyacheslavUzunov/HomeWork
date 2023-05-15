@@ -36,11 +36,16 @@ const HW13 = () => {
             .then((res) => {
                 setCode('Код 200!')
                 setImage(success200)
+
                 // дописать
 
             })
             .catch((e) => {
+                setCode('Код 400!')
+                setInfo('')
+                setImage(error400)
                 // дописать
+
 
             })
     }
@@ -55,8 +60,6 @@ const HW13 = () => {
                         id={'hw13-send-true'}
                         onClick={send(true)}
                         xType={'secondary'}
-                        // дописать
-
                     >
                         Send true
                     </SuperButton>
