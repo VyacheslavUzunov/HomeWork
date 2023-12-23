@@ -36,24 +36,26 @@ const HW13 = () => {
             .then((res) => {
                 setCode('Код 200!')
                 setImage(success200)
-                setInfo('completed')
+                setInfo('...всё ок)')
                 // дописать
 
             })
             .catch((e) => {
                 setText(e.code)
-                setInfo('completed')
                 switch(e.code) {
                     case 'ERR_BAD_RESPONSE':
                         setImage(error500)
+                        setInfo('500')
                         break
 
                     case 'ERR_BAD_REQUEST':
                         setImage(error400)
+                        setInfo('400')
                         break
 
                     default:
                         setImage(errorUnknown)
+                        setInfo('Error')
                         break
                 }
 
